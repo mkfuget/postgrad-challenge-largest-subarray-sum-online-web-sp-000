@@ -13,7 +13,7 @@ function largestSubarraySum(array){
  // code to write here
  const running_sum = Array(array.length).fill(0);
  var current_max = 0;
- running_sum[0] = 0;
+ var running_sum[0] = 0;
  for(var i=0; i<array.lenth; i++)
  {
    
