@@ -16,10 +16,10 @@ function largestSubarraySum(array){
  var runningSum[0] = array[0];
  for(var i=1; i<array.lenth; i++)
  {
-  var newSum = runningSum[i-1] + array[i]
-  if(newSum > array[i])
-    runningSum[i] = newSum
-   else
+    var newSum = runningSum[i-1] + array[i]
+    if(newSum > array[i])
+      runningSum[i] = newSum
+    else
  }
  
 }
