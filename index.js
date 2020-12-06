@@ -1,6 +1,6 @@
 function largestSubarraySum(array){
  // code to write here
- const running_sum = Array(array.length).fill(0);
+ const runningSum = Array(array.length).fill(0);
  var currentMax = 0;
  var runningSum[0] = array[0];
  for(var i=1; i<array.lenth; i++)
