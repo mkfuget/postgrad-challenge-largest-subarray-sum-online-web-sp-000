@@ -20,7 +20,14 @@ function largestSubarraySum(array){
     if(newSum > array[i])
       runningSum[i] = newSum
     else
- }
+      runningSum[i] = array[i]
+    end 
+    if(runningSum[i] > currentMax)
+    {      
+      currentMax = runningSum[i]
+    }
+  }
+  return currentMax
  
 }
 
