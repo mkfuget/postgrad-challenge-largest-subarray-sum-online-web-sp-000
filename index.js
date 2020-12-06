@@ -7,10 +7,13 @@ function largestSubarraySum(array){
  {
     var newSum = runningSum[i-1] + array[i]
     if(newSum > array[i])
+    {
+      
+    }
       runningSum[i] = newSum
     else
       runningSum[i] = array[i]
-    end 
+     
     if(runningSum[i] > currentMax)
     {      
       currentMax = runningSum[i]
