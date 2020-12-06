@@ -6,6 +6,7 @@ function largestSubarraySum(array){
  for(var i=1; i<array.lenth; i++)
  {
     var newSum = runningSum[i-1] + array[i]
+    console.log(newSum)
     if(newSum > array[i])
     {
       runningSum[i] = newSum
