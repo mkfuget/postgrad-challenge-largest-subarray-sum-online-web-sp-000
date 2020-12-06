@@ -12,11 +12,14 @@ let array = [1, -1, 5, 3, -7, 4, 5, 6, -100, 4]
 function largestSubarraySum(array){
  // code to write here
  const running_sum = Array(array.length).fill(0);
- var current_max = 0;
- var running_sum[0] = 0;
- for(var i=0; i<array.lenth; i++)
+ var currentMax = 0;
+ var runningSum[0] = array[0];
+ for(var i=1; i<array.lenth; i++)
  {
-   
+  var newSum = runningSum[i-1] + array[i]
+  if(newSum > array[i])
+    runningSum[i] = newSum
+   else
  }
  
 }
